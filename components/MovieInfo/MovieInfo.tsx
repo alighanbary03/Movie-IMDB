@@ -24,10 +24,10 @@ function cn(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 const myLoader = ({ src }: { src: string }) => {
-  if (src === "http://image.tmdb.org/t/p/w780null") {
+  if (src === "https://image.tmdb.org/t/p/w780null") {
     return "/no_image.jpg";
   } else {
-    return `http://image.tmdb.org/${src}`;
+    return `https://image.tmdb.org/${src}`;
   }
 };
 const MovieInfo = ({

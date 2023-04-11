@@ -32,6 +32,8 @@ const Home: NextPage = () => {
   };
 
   if (error) return <div>oh noooooo somthing went wrong!</div>;
+
+  if (data?.pages[0].total_results === undefined) return <Spinner />;
   return (
     <main
       className="relative h-screen overflow-y-scroll"
